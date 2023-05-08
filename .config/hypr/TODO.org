@@ -1,0 +1,15 @@
+* [-] Must-have de Hyprland
+** DONE Notification daemon
+** DONE Pipewire (partage d'écran)
+** DONE XDG Desktop Portal
+** DONE Authentication Agent
+** WAIT QT Wayland Support
+* [X] Window rules pour discord, thunderbird, fichiers, ... ?
+* [X] Alias pour la commande quand je suis sur mon pc fixe
+* [X] Meilleure combinaison de touche pour rofi
+* [X] Waybar click sur le nom pour play/pause
+* [X] Changer les couleurs de waybar
+* [X] Touche pour un nouveau workspace
+* [ ] Configurations pour le touchpad
+* [ ] Faire un peu de cleaning
+* DONE (Emacs) Changer les couleurs des tactiques Coq
