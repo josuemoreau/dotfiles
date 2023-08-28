@@ -72,3 +72,4 @@ alias l=ls
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
+alias cpufreq='watch -n.1 "grep \"^[c]pu MHz\" /proc/cpuinfo"'
