@@ -11,7 +11,7 @@ theme="$type/$style"
 
 # Theme Elements
 prompt="`hostname`"
-mesg="Uptime : `uptime -p | sed -e 's/up //g'`"
+mesg="Temps depuis le démarrage : `uptime -p | sed -e 's/up //g' | sed -e 's/hours/heures/g' | sed -e 's/days/jours/g'`"
 
 if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
 	list_col='1'
@@ -68,7 +68,7 @@ confirm_cmd() {
 		-theme-str 'textbox {horizontal-align: 0.5;}' \
 		-dmenu \
 		-p 'Confirmation' \
-		-mesg 'Are you Sure?' \
+		-mesg 'Êtes-vous sûr ?' \
 		-theme ${theme}
 }
 
@@ -94,7 +94,7 @@ run_cmd() {
 	elif [[ "$1" == '--opt2' ]]; then
 		confirm_run 'kill -9 -1'
 	elif [[ "$1" == '--opt3' ]]; then
-		confirm_run 'mpc -q pause' 'amixer set Master mute' 'swaylock -f -C /home/josue/.config/hypr/swaylock.conf --grace 0' 'systemctl suspend'
+		confirm_run '' 'true' 'swaylock -f -C /home/josue/.config/hypr/swaylock.conf --grace 0' 'systemctl suspend'
 	elif [[ "$1" == '--opt4' ]]; then
 		confirm_run 'systemctl hibernate'
 	elif [[ "$1" == '--opt5' ]]; then
