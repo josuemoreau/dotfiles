@@ -17,4 +17,4 @@ theme='style-6'
 rofi \
     -show drun \
     -theme ${dir}/${theme}.rasi
-    -drun-use-desktop-cache
+    # -drun-use-desktop-cache
